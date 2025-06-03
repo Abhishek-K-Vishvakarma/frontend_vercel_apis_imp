@@ -12,6 +12,7 @@ const User = () => {
   return (
     <div>
       <h2>Welcome to user component!</h2>
+      <p>Here imlementations of vercel backend server apis in frontend!</p>
       <br/>
       {
         data.map((user)=>{
