@@ -108,7 +108,6 @@ const Registeration = () =>{
         <br /><br />
         <Link to="/user_register" style={{ textDecoration: 'none', color: 'blue', fontSize: '20px', fontWeight: 'bold' }}>REGISTRATION</Link>
         {(user?.data?.user?.name === undefined) ? <Link to="/userlogin" style={{ textDecoration: 'none', color: 'blue', fontSize: '20px', fontWeight: 'bold' }}>LOGIN</Link> : <Link to="/userlogout" style={{ textDecoration: 'none', color: 'red', fontSize: '20px', fontWeight: 'bold' }}>LOGOUT</Link>}
-
       </Offcanvas>
       <form
         onSubmit={handleRegister}
