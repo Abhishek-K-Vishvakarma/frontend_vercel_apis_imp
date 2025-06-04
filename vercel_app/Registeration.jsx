@@ -123,8 +123,7 @@ const Registeration = () =>{
           top: "80px",
           backgroundColor: "rgba(255, 255, 255, 0.8)",
           position: "absolute",
-        }}
-      >
+        }}>
         <p style={{background: '#cc0c39', color: 'white', textAlign: 'center', fontWeight: 'bold', fontSize: '20px', padding: '12px'}}>SIGN UP PAGE ?</p>
         <br/><br/>
         <label>
