@@ -1,4 +1,5 @@
-// Function to handle login based on email and password
+// src/admin/Account.jsx
+
 export const adminAccounts = (email, password) => {
   if (email === "admin@gmail.com" && password === "admin111") {
     const admin = { role: "admin", email };
@@ -9,16 +10,15 @@ export const adminAccounts = (email, password) => {
     localStorage.setItem("auth", JSON.stringify(user));
     return user;
   }
-  return null; // Don't store guest if not matching
+  return null;
 };
 
-// Get currently logged-in user (admin or user)
 export const getCurrentAuth = () => {
   const data = localStorage.getItem("auth");
   return data ? JSON.parse(data) : null;
 };
 
-// Clear login (logout)
 export const clearAuth = () => {
   localStorage.removeItem("auth");
+  localStorage.removeItem("user");
 };

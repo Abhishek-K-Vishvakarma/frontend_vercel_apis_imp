@@ -9,12 +9,14 @@ import Subcategory from './subcategory/Subcategory';
 import ShippingAddress from '../shipping/ShippingAddress';
 import Admin from '../admin/Admin';
 import Login from '../Login';
-import Products from './subcategory/product/Products';
+import Products from './product/Products';
 import { Authentication } from '../Authentication';
 import Logout from '../Logout';
 import Registeration from '../Registeration';
 import GuestPage from '../GuestPage';
 import EmailVerify from '../EmailVerify';
+import ShopingUser from './ShopingUser';
+import Addtocart from './Addtocart';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -32,6 +34,8 @@ createRoot(document.getElementById('root')).render(
           <Route path="/user_register" element={<Registeration />} />
           <Route path="/guest" element={<GuestPage/>}/>
           <Route path="/verify" element={<EmailVerify />} />
+          <Route path="/shoping" element={<ShopingUser />} />
+          <Route path="/cart" element={<Addtocart />} />
         </Routes>
       </Authentication>
     </BrowserRouter>
